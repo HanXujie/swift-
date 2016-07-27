@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="3vE-G6-Sq4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="3vE-G6-Sq4" customClass="PlayerTableViewCell" customModule="swift_closure" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3vE-G6-Sq4" id="L11-5n-CvV">
@@ -45,6 +45,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="nameLabel" destination="wUd-Eb-pd2" id="g4b-6c-xG6"/>
+                                    <outlet property="scoreLabel" destination="anG-ho-cP8" id="dfD-dK-EZN"/>
                                     <segue destination="pGb-4m-gGH" kind="show" id="IT4-bs-WRi"/>
                                 </connections>
                             </tableViewCell>
