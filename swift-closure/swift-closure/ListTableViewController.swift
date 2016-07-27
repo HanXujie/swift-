@@ -21,7 +21,7 @@ class ListTableViewController: UITableViewController {
         }
     }
     
-    
+    // 数据顺传
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let dtVC = segue.destinationViewController as! DetailViewController
