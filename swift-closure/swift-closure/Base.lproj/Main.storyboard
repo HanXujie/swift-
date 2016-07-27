@@ -66,7 +66,7 @@
         <!--Info-->
         <scene sceneID="9li-Oa-AKV">
             <objects>
-                <viewController id="pGb-4m-gGH" sceneMemberID="viewController">
+                <viewController id="pGb-4m-gGH" customClass="DetailViewController" customModule="swift_closure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vh5-Lb-m9E"/>
                         <viewControllerLayoutGuide type="bottom" id="Ghd-9r-TYu"/>
@@ -89,9 +89,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="5ND-96-18L">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="paz-Ax-Y7N"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="paz-Ax-Y7N">
+                            <connections>
+                                <action selector="save:" destination="pGb-4m-gGH" id="GlN-Cc-g6e"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="numTextF" destination="Gv5-1c-9OJ" id="uhf-KM-IDJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcV-83-0A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
